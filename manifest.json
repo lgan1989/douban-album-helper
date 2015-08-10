@@ -3,7 +3,7 @@
   "description": "Play music in album page",
   "version": "1.2.2",
 
-  "permissions": [ "http://*/dial/track/*", "http://*.douban.com/*", "https://*.douban.com/*", "http://douban.fm/*" ],
+  "permissions": [ "http://*/dial/track/*", "http://*.douban.com/*", "https://*.douban.com/*", "http://music.163.com/*" ],
   "icons": { "16": "icon16.png",
            "48": "icon48.png",
           "128": "icon128.png" },
@@ -11,7 +11,7 @@
   "content_scripts" : [
     {
       "matches" : [
-        "http://*.douban.com/*"
+        "http://*.music.163.com/*"
       ],
       "js" : ["jquery.min.js" , "content.js"]
     }
